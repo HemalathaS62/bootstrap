@@ -1,0 +1,175 @@
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+#features{
+   margin-left: 0;
+}
+
+ .panel p{
+   margin-top: 20px;
+ }
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body{
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+}/*for text smooth*/
+
+.well .page-header{
+   margin-top: 0;
+}
+.well .page-header h1{
+   margin-top: 0;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+  .lead{
+    text-align: justify;
+    text-indent: 10px;
+  }
+   #searchInput{
+      width: 300px;
+   }
+   .navbar-brand{
+      padding: 13px 15px;
+   }
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel{
+   margin-top: 60px;
+}
+
+.carousel-caption {
+font-size: 20px;
+}
+#myCarousel .item{ height: 400px; }
+#slide1{
+   background : url('../../images/bookslide1-medium.jpg') top center no-repeat;
+}
+#slide2{
+   background : url('../../images/bookslide2-medium.jpg') top center no-repeat;
+}
+#slide3{
+   background : url('../../images/bookslide3-medium.jpg') top center no-repeat;
+}
+#promoslide img{
+  width:600px;
+}
+/*-----------more info-----------*/
+.feature a{
+  text-align: center;
+  margin-left: auto;
+}
+
+.image-promo{
+  margin-top: 80px;
+}
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+   .tabbable img.thumbnail{
+      margin:0 20px 0 0;
+   }
+.alert{
+   margin-top: 20px;
+   display: none;
+}
+.well{
+   margin: 20px 0;
+}
+.tabbable img.thumbnail
+{
+	margin:0 20px 10px 0;
+}
+ .para{
+  border-style: groove;
+  text-align: center;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+   @media screen and (max-width: 810px) {
+      #section1, #section2, #section3, #section41, #section42  {
+          margin-left: 150px;
+      }
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+}
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #myCarousel .item { height: 310px; }
+
+#slide1 {
+  background: url('../../images/bookslide1-small.jpg') top center no-repeat;
+}
+
+#slide2 {
+  background: url('../../images/bookslide2-small.jpg') top center no-repeat;
+}
+
+#slide3 {
+  background: url('../../images/bookslide3-small.jpg') top center no-repeat;
+}
+#promoslide img{
+  width:380px;
+  height: 200px;
+}
+.carousel-caption {
+  font-size: 16px;
+}
+
+.carousel-caption h4 {
+  font-size: 22px;
+}
+
+}
+#button-space{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+/* Large desktop */
+.tab-content p{
+   text-align: justify;
+}
+@media (min-width: 1200px) {
+#myCarousel .item{ height: 500px; }
+#slide1{
+   background : url('../../images/bookslide1-large.jpg') top center no-repeat;
+}
+#slide2{
+   background : url('../../images/bookslide2-large.jpg') top center no-repeat;
+}
+#slide3{
+   background : url('../../images/bookslide3-large.jpg') top center no-repeat;
+}
+#promoslide img{
+     width: 1100px;
+}
+}
+.unstyled{
+  list-style-type: none;
+}
+footer{
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+		<link href="images/fav.ico" rel="shortcut icon"/>
+	     <title>Book Store</title>
+	<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="bootstrap/css/simple-sidebar.css" rel="stylesheet"/>
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet"/>
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div class="container" id="main">
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="logo" href="/"><img src="images/booklogo.jpg"></a>
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav">
+		              <li class="active">
+	                   <a href="index.html">Home</a>
+		              </li>
+		              <li class="dropdown">
+		                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<strong class="caret"></strong></a>
+		                    <ul class="dropdown-menu">
+		        	               <li>
+		        	                    <a href="#">Text Books</a>
+		        	              </li>
+		        	              <li>
+		        	                   <a href="#">Stories</a>
+		        	              </li>
+		        	              <li>
+		        	                   <a href="#">Foods</a>
+		        	              </li>
+                            <li>
+                                 <a href="#">Sports</a>
+                            </li>
+                            <li>
+                                 <a href="#">Novels</a>
+                            </li>
+		        	              <li class="divider"></li>
+		        	              <li>
+		        	                   <a href="#">Help</a>
+		        	              </li>
+		                    </ul><!--end dropdown menu-->
+                  </li><!--end dropdown-->
+                  <li>
+                    <a href="https://www.goodreads.com/review/recent_reviews">Reviews</a>
+                  </li>
+		         </ul><!--end nav navbar-nav-->
+             <form class="navbar-form pull-left">
+                <input type="text" class="form-control" placeholder="Search by title,author name..." id="searchInput">
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form><!--navbar-form-->
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#"><img src="images/shoppingcart.png">view cart</a></li>
+                 <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account<strong class="caret"></strong></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-user"></span>My Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-edit"></span>Edit Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                             <a href="#"><span class="glyphicon glyphicon-off"></span>Sign Out</a>
+                        </li>
+                    </ul><!--end dropdown-menu-->
+                 </li><!--end dropdown-->
+               </ul><!--end nav pull-right-->
+            </div><!--end nav-collapse-->
+          </div><!--end container-->
+        </div><!--end navbar-->
+        <div class="container">
+           <div class="col-sm-12" id="promoslide">
+             <img src="images/imagepromo.jpg" alt="Promo Image" class="image-promo">
+           </div><!--end col-sm-12-->
+        </div><!--end container-->
+    <div class="col-sm-12">
+      <h3>Ravinder Sigh Books</h3>
+    <div class="col-sm-3">
+      <div class="panel">
+        <img src="images/ravinderbook1.jpg" alt="Ravinder Sigh Books"><br><br>
+      <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="button-space">Download</a>
+    </div><!--end panel-->
+  </div><!-- end col-sm-3-->
+  <div class="col-sm-3">
+    <div class="panel">
+        <img src="images/ravinderbook2.jpg" alt="Ravinder Sigh Books"><br><br>
+        <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="button-space">Download</a>
+  </div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="col-sm-3">
+  <div class="panel">
+      <img src="images/ravinderbook3.jpg" alt="Ravinder Sigh Books"><br><br>
+      <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="button-space">Download</a>
+</div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="col-sm-3">
+  <div class="panel">
+  <marquee><h4>More books</h4></marquee>
+  <section>
+  <article class="para">
+    <p>Ravinder Singh is an Indian author.He has written five novels entitled "I Too Had a Love Story","Can Love Happen Twice?","Like it happened Yesterday","Your Dreams are Mine Now" and "This Love That Feels Right".
+</p></article>
+</section>
+  <a href="#" role="button" class="btn btn-info" data-toggle="modal" id="button-space">See more</a>
+</div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Your details</h4>
+          </div><!-- end modal-header -->
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputName" placeholder="Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                </div>
+              </div>
+            </form>
+          </div><!-- end modal-body -->
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Add to Cart</button> <button class="btn btn-danger" data-dismiss="modal" type="button">Cancel</button>
+          </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+      </div><!-- end modal-dialog -->
+    </div><!-- end myModal -->
+</div><!--end col-sm-12-->
+<div class="col-sm-12">
+  <h3>Chetan Bhagat Books</h3>
+<div class="col-sm-3">
+  <div class="panel">
+    <img src="images/chetanbook1.jpg" alt="Ravinder Sigh Books"><br>
+    <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="button-space">Download</a>
+</div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="col-sm-3">
+<div class="panel">
+    <img src="images/chetanbook2.jpg" alt="Ravinder Sigh Books"><br>
+    <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="button-space">Download</a>
+</div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="col-sm-3">
+<div class="panel">
+  <img src="images/chetanbook3.jpg" alt="Ravinder Sigh Books"><br>
+  <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" id="button-space">Download</a>
+</div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="col-sm-3">
+  <div class="panel">
+  <marquee><h4>More books</h4></marquee>
+  <section>
+  <article class="para">
+    <p>Chetan Bhagat's,Five Point Someone,One Night @ the Call Center,The 3 Mistakes of My Life,2 States,Revolution 2020, What Young India Wants, Half Girlfriend and Making India Awesome.
+    </p>
+</article>
+</section>
+  <a href="#" target="_blank" class="btn btn-info btn-block">See more</a>
+</div><!--end panel-->
+</div><!-- end col-sm-3-->
+<div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Your details</h4>
+          </div><!-- end modal-header -->
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputName" placeholder="Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                </div>
+              </div>
+            </form>
+          </div><!-- end modal-body -->
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Add to Cart</button> <button class="btn btn-danger" data-dismiss="modal" type="button">Cancel</button>
+          </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+      </div><!-- end modal-dialog -->
+    </div><!-- end myModal -->
+</div><!--end col-sm-12-->
+<div class="row" id="moreInfo">
+				<div class="col-sm-6">
+					<h3>About Our Location and about us</h3>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>More like our favourite surf spot</small></h4>
+								<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62617.944898225374!2d78.13407800869344!3d11.215611051765107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babce5e3f22014f%3A0xa0ab89ef32c34a77!2sNamakkal%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1480319228884"></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div><!-- end tab-pane -->
+							<div class="tab-pane" id="tab2">
+								<h4>About Us</h4>
+								<img src="images/aboutus.jpg" class="thumbnail pull-left" alt="Placeholder image">
+								<p>Reading books is the favourite pastime of many people. If you’re bitten by the book-bug too, then there is a massive collection of books for you to read. From bestsellers to new & future releases, the choices are exhaustive when you shop onlineat India's Largest Bookstore.
+                  From books for dummies, to textbooks for students, there are a wide variety of books. You can explore the young adults books store if you’re looking to gift a nice book to a teenager, where you can find books from the best-selling series.Innumerable books are divided under various categories like action & adventure, business & economics, comics & mangas, crime, thriller & mystery, fiction, humour, and romance. You can browse by genre when you buy online making it more convenient for you to narrow down your choices. Then there are biographies and true accounts bestsellers as well. These books are available in different formats like hardcover, paperback, and board book.
+                  Gone are the days, when books were always hand-held. In this digital age, there are Kindle eBooks which you can read on your Amazon Kindle. Some selected range of free eBooks are present if you want to download them on to your device. Apart from that, there are audiobooks, which can be used by those who prefer listening to reading. This is especially helpful for students who want to listen to recorded lectures by reputed professors, and also to those who can’t read.
+                </p>
+                <hr>
+              </div><!--end tab-pane-->
+            </div><!--end tab-content-->
+          </div><!--end tabbable-->
+        </div><!--end col-sm-6-->
+        <div class="col-sm-6">
+          <div><br><br><br>
+              <article class="para">
+                <h4>Frequently asked questions</h4>
+                <p>Why should I use BookStore?<br>
+                  Save TIME. Save MONEY. Don't believe me? Here is how -<br>
+                  There are a number of good stores from where you can buy books online. Though, the pricing of the books varies from store to store. You favorite online store might not be cheapest every time. So depending on how much you're saving and if your book's availability, you might want to get a book from somewhere other than your preferred store. We help you do all this in just one click!
+                  . Just start your searches from here and then head on to the bookstore which you find best and continue with your online book purchase. No more opening multiple windows and searching on each store
+                </p>
+                </article>
+          </div>
+          <div><br><br>
+              <article class="para">
+                <p>Subscribe to receive updates from BookStore blog - Bookish<p>
+                <input type="text" id="email-form" name="E-mail" placeholder="Enter your Email">
+                <br><input id="email-form" type="button" value="Submit">
+              </article>
+          </div>
+          <div><br><br>
+              <article class="para">
+                <h4>Help</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </p></article>
+          </div>
+        </div><!--end col-sm-6-->
+      </div><!--end row-->
+</div><!--end container-->
+</body>
+<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					<h6>Copyright &copy; Book Store</h6>
+					</div><!-- end col-s3 -->
+					<div class="col-sm-3">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact:9944335511</a></li>
+						</ul>
+					</div><!-- end col-sm-3 -->
+					<div class="col-sm-3">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="https://twitter.com/login"><i class="fa fa-twitter-square" style="font-size:24px; color:blue"></i>  Twitter</a></li>
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:24px;color:blue"></i>   Facebook</a></li>
+							<li><a href="#"><i class="fa fa-google-plus" style="font-size:24px;color:blue"></i>  Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-3 -->
+					<div class="col-sm-3">
+						<h6>Coded by Hema</h6>
+					</div><!-- end col-sm-3 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+</footer>
+<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+<!-- All Javascript at the bottom of the page for faster page loading -->
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="includes/js/script.js"></script>
+</html>
